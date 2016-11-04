@@ -1,0 +1,31 @@
+{% extends "blog.html" %}
+
+{% block content %}
+<p>Submitted on: {{post.created.strftime("%b %d, %Y")}}</p>
+<h2>{{post.subject}}</h2>
+<p>{{post.content}}</p>
+<p>Written By: <b>{{post.created_by}}</b></p>
+
+{% if username == post.created_by %}
+<a href="/blog/{{post.key().id()}}/edit">Edit Post</a>
+{% endif %}
+
+<hr>
+<h2>Comments Section</h2>
+<a href="/blog/{{post.key().id()}}/comment/add">Add a comment</a>
+<hr>
+{% for comment in comments %}
+<div class="comment {{ loop.cycle('odd', 'even') }}">
+<p>Submitted on: {{comment.created.strftime("%b %d, %Y")}}</p>
+<p>{{comment.content}}</p>
+<p>By: <b>{{comment.created_by}}</b></p>
+<!-- <p>ID: {{comment.id}}</p> -->
+{% if comment.created_by == username %}
+<a href="/blog/{{post.key().id()}}/comment/{{comment.id}}/edit">Edit</a>
+<a href="/blog/{{post.key().id()}}/comment/{{comment.id}}/delete">Delete</a>
+{% endif %}
+</div> <!--end of a single comment-->
+{% endfor %}
+<br>
+<a href="/blog">Back to Blogs</a>
+{% endblock %}

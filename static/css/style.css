@@ -1,0 +1,126 @@
+/*Landing Page */
+#center {
+	margin: 100px auto;
+    width: 60%;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: rgba(0,0,0, 0.3);    
+    text-align: center;
+    -webkit-box-shadow: 0px -1px 18px 6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px -1px 18px 6px rgba(0,0,0,0.75);
+	box-shadow: 0px -1px 18px 6px rgba(0,0,0,0.75);
+}
+
+#title {
+	font-size: 30px;
+	color:#fff;
+	text-shadow: 4px 3px 3px rgba(0,0,0, 1);
+}
+
+#enter {
+	color:#fff;
+	font-size: 20px;
+	border-bottom: 1px solid #fff;
+	text-shadow: 4px 3px 3px rgba(0,0,0, 1);
+}
+
+#enter:hover {
+	text-decoration: none;
+	color:#c29bff;
+}
+
+.inputs input{
+			display: block;
+
+}
+
+
+
+
+/*
+*Blog Styles
+*/
+
+.left-align {
+	float: left;
+}
+
+.right-align {
+	float: right;
+}
+
+.error {
+	color:red;
+}
+
+.post-content {
+	padding: 10px;
+}
+
+.post-content.odd {
+	background-color: #e0e0e0;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+
+.post-content.even {
+	background-color: #ebedff;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+
+
+span.glyphicon-thumbs-up.thumbs{
+	font-size: 1.2em;
+	margin-bottom: 10px;
+	padding: 5px;
+	border:1px solid #6dfa7d;
+	color:#6dfa7d;
+	border-radius: 2px;
+}
+
+span.glyphicon-thumbs-up.thumbs:hover{
+	background-color: #6dfa7d;
+	color:white;
+}
+
+span.glyphicon-thumbs-down.thumbs{
+	font-size: 1.2em;
+	margin-bottom: 10px;
+	padding: 5px;
+	border:1px solid #ff4d4d;
+	color:#ff4d4d;
+	border-radius: 2px;
+}
+
+span.glyphicon-thumbs-down.thumbs:hover{
+	background-color: #ff4d4d;
+	color:white;
+}
+
+
+/*Register and login pages*/
+
+td.label {
+	color:grey;
+	font-size: 12px;
+}
+
+
+/*Post a blog*/
+
+
+/*Comment section*/
+div.comment.odd {
+	background-color: #e0e0e0;
+	padding: 5px;
+	margin-top: 15px;
+	border-radius: 5px;
+}
+
+div.comment.even {
+	background-color: #ebedff;
+	padding: 5px;
+	margin-top: 15px;
+	border-radius: 5px;
+}

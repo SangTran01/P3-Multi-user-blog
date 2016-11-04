@@ -1,0 +1,17 @@
+{% extends "blog.html" %}
+
+{% block content %}
+	<h1>Edit comment</h1>
+	<form method='post'>
+		<label for="basic-url">Content</label>
+		<div class="input-group">
+		  <textarea class="form-control" rows='8' cols='50' name='content'>{{comment.content}}</textarea>
+		</div>
+		<div>
+		<br>
+			<button class='btn btn-default' type="submit">Submit</button>
+			<a class="btn btn-danger" onclick="goBack()">Cancel</a>
+		</div>
+	</form>
+	<span class='error'><h4>{{error}}</h4></span>
+{% endblock %}

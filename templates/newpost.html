@@ -1,0 +1,22 @@
+{% extends "blog.html" %}
+
+{% block content %}
+	<h1>Add a post</h1>
+	<form method='post'>
+
+		<label for="basic-url">Subject</label>
+		<div class="input-group">
+		  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="subject" value="{{subject}}">
+		</div>
+		<label for="basic-url">Content</label>
+		<div class="input-group">
+		  <textarea class="form-control" rows='8' cols='50' name='content'>{{content}}</textarea>
+		</div>
+		<div>
+		<br>
+			<button class='btn btn-default' type="submit">Submit</button>
+			<a class='btn btn-danger' onclick="goBack()">Cancel</a>
+		</div>
+	</form>
+	<span class='error'><h4>{{error}}</h4></span>
+{% endblock %}
