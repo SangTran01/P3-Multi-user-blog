@@ -5,9 +5,13 @@
 
 This is the project 3 blog app for Udacity Fullstack Nanodegree. This app covers the basics features such as...
 - designing a basic blog
+- Python OOP
 - User Registration and Authentication
+- Creating cookies, salts, secure passwords then hashing
 - Add Login and Logout 
-- create/delete posts and comments 
+- CRUD functionality
+
+![p3](https://cloud.githubusercontent.com/assets/15135653/20071929/7b8acddc-a4f4-11e6-95a5-be015aaf5ae6.jpg)
 
 
 ## Requirements
