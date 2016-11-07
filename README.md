@@ -1,4 +1,4 @@
-# project-3-fullstack
+# P3 Multi User blog
 
 
 ## Introduction
